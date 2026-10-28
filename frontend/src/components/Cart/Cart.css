@@ -1,0 +1,131 @@
+.cart-container {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* TÍTULO */
+.cart-container h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.cart-container h2 span {
+    color: #8f8cff;
+}
+
+/* HEADER (6 columnas, la primera vacía para la imagen) */
+.cart-header {
+    display: grid;
+    grid-template-columns: 80px 2fr 1fr 1.5fr 1fr 0.5fr;
+    align-items: center;
+    font-weight: bold;
+    font-size: 15px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid #ddd;
+}
+
+.cart-header p {
+    margin: 0;
+    text-align: center;
+}
+
+.cart-header p:first-child {
+    text-align: left;
+}
+
+/* LISTA */
+.cart-items {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* ITEM */
+.cart-item {
+    display: grid;
+    grid-template-columns: 80px 2fr 1fr 1.5fr 1fr 0.5fr;
+    align-items: center;
+    padding: 20px 0;
+    border-bottom: 1px solid #eee;
+}
+
+/* IMAGEN */
+.product-images {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+/* NOMBRE PRODUCTO */
+.cart-item span {
+    font-size: 14px;
+}
+
+/* PRECIO / TOTAL */
+.cart-item > p {
+    text-align: center;
+    font-size: 14px;
+    margin: 0;
+}
+
+/* CANTIDAD */
+.quantity-controls {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+}
+
+.quantity-btn {
+    width: 28px;
+    height: 28px;
+    border: none;
+    background-color: #e6e6e6;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.quantity-input {
+    width: 40px;
+    height: 28px;
+    text-align: center;
+    border: 1px solid #ccc;
+}
+
+/* ACCIÓN */
+.delete-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    text-align: center;
+}
+
+.delete-btn:hover {
+    color: #8f8cff;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .cart-header {
+        display: none;
+    }
+
+    .cart-item {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    .quantity-controls {
+        justify-content: flex-start;
+    }
+
+    .cart-item > p,
+    .delete-btn {
+        text-align: left;
+    }
+}

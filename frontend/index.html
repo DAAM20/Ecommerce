@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <!--
+    Configuracion técnica de la paginaprincipal del E-commerce
+    - charset: Define la codificación de caracteres en UTF-8 para soporte multiidioma.
+    - Viewport: Optimiza el escalado y la vizualización responsive en dispositivos móviles.
+    -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- Recursos Externos y Favicon -->
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <title>ecommerce</title>
+  </head>
+  <body>
+    <!--
+    Nodo Raíz (DOM Target)
+    Contenedor principal donde react inyectará y renderizara toda la interfaz dinamica.
+    -->
+    <div id="root"></div>
+    
+    <!--
+      Punto de entrada de la aplicación (React + Vite)
+      Carga el script principal en modo módulo para inicializar el ciclo de React.
+    -->
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
